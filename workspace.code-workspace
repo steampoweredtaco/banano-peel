@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\rollup-plugin-node-polyfills"
+		}
+	],
+	"settings": {}
+}

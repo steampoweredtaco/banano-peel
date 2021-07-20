@@ -1,0 +1,20 @@
+{
+    "name": "banano-peel",
+    "version": "0.1",
+    "description": "Quickly donate to banano enabled content.",
+    "manifest_version": 2,  "permissions": ["storage", "https://kaliumapi.appditto.com/api", "tabs"],
+    "background": {
+      "page": "background.html",
+      "persistent": false
+    },
+    "content_scripts": [{
+      "js": ["build/injection.js"],
+      "matches": ["*://*/*"]
+    }],
+    "page_action": {
+      "default_icon": "banano-icon-dim.png",
+      "default_title": "Send a tip to this page owner.",
+      "default_popup": "index.html"
+    }
+
+}
